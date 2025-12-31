@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  min-height: 100%;
+  background: #020617;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+}
+
+* {
+  @apply border-slate-800;
+}
+
+.glass-panel {
+  @apply bg-slate-900/70 backdrop-blur-md border border-slate-800/60 shadow-lg shadow-slate-950/40;
+}
